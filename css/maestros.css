@@ -1,0 +1,88 @@
+* {
+  background-color: black;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: fantasy;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+ul {
+  background: none;
+  border: none;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover {
+  color: rgb(216, 42, 11);
+}
+p {
+  color: #ccc;
+  text-align: center;
+  font-size: 60px;
+  font-style: oblique;
+  font-family: cursive;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#dropAreaContainer {
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  color: #ffffff;
+  margin-left: 37%;
+}
+#dropArea {
+  color: #ffffff;
+  width: 300px;
+  height: 200px;
+  border: 6px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: changeBorderColor 5s infinite;
+}
+@keyframes changeBorderColor {
+  0% {
+    border-color: #4caf50;
+  }
+  25% {
+    border-color: #e91e63;
+  }
+  50% {
+    border-color: #ff0000;
+  }
+  75% {
+    border-color: #ffffff;
+  }
+  100% {
+    border-color: #03a9f4;
+  }
+}
+input[type="file"] {
+  display: none;
+}
+#status {
+  margin-top: 10px;
+}

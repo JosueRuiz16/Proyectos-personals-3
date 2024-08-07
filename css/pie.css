@@ -1,0 +1,107 @@
+/* Estilos base para el pie de página */
+.pie {
+  background: rgb(24, 23, 23);
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  padding: 20px;
+  min-height: 440px; /* Establecer una altura mínima para asegurar que se vea bien en todas las pantallas */
+}
+
+/* Estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 576px) {
+  .grupo-2 img {
+    width: 100%;
+  }
+  .frase p {
+    margin-left: 0;
+  }
+}
+
+/* Estilos comunes para todos los tamaños de pantalla */
+.pie h1 {
+  font-size: 40px;
+}
+
+.grupo-2 img {
+  width: 30%;
+}
+
+.frase p {
+  white-space: nowrap;
+  font-size: 20px;
+  font-family: "Courier New", monospace;
+  word-wrap: break-word;
+}
+
+/* Keyframes y estilos de animación */
+@keyframes blinkAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Estilos adicionales para los íconos sociales y enlaces */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0; /* Para eliminar el espacio entre los elementos */
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 60px;
+  display: flex;
+  height: 80px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.social-icons a img {
+  width: 200%;
+}
+
+/* Estilos para el enlace "Encuéntranos en el maps" */
+.encuentranos a {
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Estilos para pantallas medianas y más grandes */
+@media (min-width: 768px) {
+  .pie {
+    height: 200px; /* Establecer la altura para pantallas medianas y más grandes */
+  }
+  .grupo-2 {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  .frase p {
+    margin-left: 110%;
+  }
+}
+.logospie {
+  display: flex;
+  margin-right: 60px;
+  height: 100px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="fisica.html" />
+    <link rel="stylesheet" href="java_scrpt/codigo.js" />
+    <link rel="icon" href="img/logo_emprendedora.ico">
+    <link rel="stylesheet" href="java_scrpt/botondianoche.js">
+    <link rel="stylesheet" href="css/pie.css">
+    <title>Biblioteca virtual</title>
+  </head>
+  <body class="hidden">
+    <div class="centrado" id="onload">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div> 
+    <!-- login antes de entrar -->
+    <div class="overlay"> 
+      <div class="popup">
+        <span class="close-btn" onclick="closePopup()">X</span>
+        <h2 style="font-family: cursive;">Bienvenido</h2>
+        <p style="font-family: cursive;">Como deseas ingresar?</p>
+        <button id="teacher-button" onclick="verificarOpcion('maestro')">Maestro</button>
+        <button id="student-button" onclick="closePopup()">Estudiante</button>
+      </div>
+    </div>
+  </div>
+    <!-- Menu -->
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="manual.html">Que hacer?</a></li>
+          <li><a href="https://josueruizwebssite2024pro.on.drv.tw/emprendedora/" target="_blank" >Sobre nosotros</a></li>
+          <li><a href="#footer" >Contacto</a></li>
+          <li><a id="show-again-link"onclick="mostrarVentanaEmergente()">Ingresar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- termina menu -->
+    <!-- Secciones -->
+     <div class="primerasclases">
+    <a href="7mos.html" class="zoom-button">
+      <img src="img/7mos.jpeg" alt="Imagen" class="zoom-image">
+    </a>
+    <a href="Aulas/8v0.html" class="zoom-button ">
+      <img src="img/8vos.jpeg" alt="Imagen" class="zoom-image">
+    </a>
+  </div>
+    </div>
+    <div class="primerasclases">
+      <a href="Aulas/9no.html" class="zoom-button">
+        <img src="img/noveno.jpg" alt="Imagen" class="zoom-image">
+      </a>
+      <a href="Aulas/10mo.html" class="zoom-button ">
+        <img src="img/10mo.jpg" alt="Imagen" class="zoom-image">
+      </a>
+    </div>
+    <div class="centered-container">
+    <div class="once">
+      <a href="Aulas/11vo.html" class="zoom-button ">
+        <img src="img/once.png" alt="Imagen" class="zoom-image">
+      </a>
+    </div>
+  </div>
+  <!-- termina secciones -->
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      <script src="java_scrpt/codigo.js"></script>
+      <script src="java_scrpt/popup.js"></script>
+      <script src="https://kit.fontawesome.com/baa10d6a3c.js" crossorigin="anonymous"></script>
+  
+  </body>
+  <footer class="pie" id="footer">
+    <h1>Servicios</h1>
+    <hr>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>Team Deluxes</b> - Todos los derechos reservados.
+        <p>Josue Ruiz</p>
+      <p>Brisa Castillo</p>
+    <p>Mario Salazar</p>
+    <p>Rafael Tellez</p>
+    <p>Anderson Muñoz</p></small>
+        <ul class="social-icons">
+          <li><a href="https://wa.me/87966756" target="_blank" class="what"><img src="img/whaapp.png" alt="WhatsApp"></a></li>
+          <li><a href="https://es-la.facebook.com/escuela.tecnica.emprendedora/" target="_blank" class="face"><img src="img/face.png" alt="Facebook"></a></li>
+          <li><a href="mailto:dcampos@opportunitynicaragua.org" target="_blank" class="gmail"><img src="img/gmail.png" alt="Gmail"></a></li>
+        </ul>
+       <div class="logospie"> <img src="img/logo_oportuni.png" alt="png" style="width: 30%;;"> <img src="img/logo_emprendedora.png" alt="emprendedora" style="width: 36%;"></div>
+        <a href="https://www.google.com/maps/place/Escuela+Tecnica+Emprendedora/@11.8749698,-86.0402679,776m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8f740e3a9b69caa5:0x54831f8e9514a740!8m2!3d11.8749646!4d-86.037693!16s%2Fg%2F11csqydr6q?hl=es&entry=ttu" style="color: white;" target="_blank" class="location-link" onclick="zoomInMap()">Encuentranos en el maps</a>
+      <div class="frase"><p>El Emprendedor no nace, Se hace.</p></div>
+    </div>
+ </footer>
+</html>

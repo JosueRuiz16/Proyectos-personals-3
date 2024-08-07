@@ -1,0 +1,76 @@
+body {
+  background: black;
+}
+section {
+  display: flex;
+  margin-top: 10px;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+}
+.boton1 {
+  width: 80%;
+  margin-right: 40%;
+}
+.boton1 img {
+  width: 70%;
+  margin-right: 50%;
+}
+.sociales {
+  width: 30%;
+  margin-right: 20%;
+}
+.sociales img {
+  width: 280%;
+  margin-right: 50%;
+}
+.ciencias {
+  width: 70%;
+  display: flex;
+  padding: 20px;
+  margin-top: 26px;
+  padding: 10px;
+}
+.ciencias img {
+  width: 10%;
+}
+.ciencias img {
+  width: 100%;
+  height: 425px;
+  margin-right: 10px; /* Margen entre la imagen y el botón */
+  margin-right: 70px;
+}
+.seccion2 {
+  display: flex;
+  margin-left: 240px;
+}
+.seccion2 img {
+  width: 110%;
+  margin-left: 80px;
+}
+
+/* Estilos para pantallas pequeñas (hasta 767px) */
+@media screen and (max-width: 767px) {
+  section {
+    display: block; /* Mostrar elementos uno debajo del otro */
+  }
+
+  .boton1,
+  .sociales,
+  .ciencias {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    margin-bottom: 1px; /* Agregar espaciado entre los elementos */
+  }
+  .sociales img {
+    max-width: 70%;
+    height: auto;
+  }
+  .ciencias img {
+    max-width: 70%;
+    height: auto;
+    margin-right: 100px;
+  }
+}

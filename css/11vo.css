@@ -1,0 +1,35 @@
+.socilogia {
+  width: 43%;
+}
+.socilogia img {
+  width: 280%;
+}
+.biologia {
+  width: 42%;
+}
+.spcra img {
+  width: 252%;
+  margin-left: 10px;
+}
+.spcra button {
+  margin-right: 40px;
+  width: 32%;
+  padding: auto;
+}
+div {
+  width: 40%;
+}
+.filosofia {
+  width: 60%;
+}
+.computacion {
+  width: 20%;
+}
+.computacion img {
+  width: 540%;
+  margin-left: 13px;
+}
+.fisica {
+  width: 60%;
+  margin-top: 30px;
+}

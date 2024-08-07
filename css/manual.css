@@ -1,0 +1,145 @@
+* {
+  background-color: black;
+}
+.cuadrados {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 210px;
+}
+
+.n1,
+.n2,
+.n3,
+.n4 {
+  width: 30%;
+  border-radius: 40px;
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+}
+
+.n1 img,
+.n2 img,
+.n3 img,
+.n4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.n1:hover .texto,
+.n2:hover .texto,
+.n3:hover .texto,
+.n4:hover .texto {
+  opacity: 1;
+}
+
+.boton1 p {
+  color: white;
+}
+.boton1 button {
+  margin-left: 550px;
+  border-radius: 4px;
+  margin-top: 100px;
+  cursor: pointer;
+  animation: changeBorderColor 5s infinite;
+}
+.boton1 button p {
+  margin: 0; /* Elimina el margen predeterminado del párrafo dentro del botón */
+}
+@keyframes changeBorderColor {
+  0% {
+    border-color: red;
+  }
+  16.67% {
+    border-color: orange;
+  }
+  33.33% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: green;
+  }
+  66.67% {
+    border-color: blue;
+  }
+  83.33% {
+    border-color: indigo;
+  }
+  100% {
+    border-color: violet;
+  }
+}
+.boton1 {
+  width: 10%;
+  margin-top: 100px;
+}
+/* Estilos generales */
+.boton1 {
+  text-align: center; /* Centrar el contenido en todas las pantallas */
+  margin: 20px;
+}
+
+/* Estilos para pantallas pequeñas (hasta 767px) */
+@media screen and (max-width: 767px) {
+  .boton1 button {
+    margin-left: 190px;
+    font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    padding: 8px 20px; /* Ajuste el relleno según sea necesario */
+  }
+}
+/* Estilos para pantallas medianas (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .boton1 button {
+    font-size: 16px; /* Tamaño de fuente mediano para pantallas medianas */
+    padding: 10px 24px; /* Ajuste el relleno según sea necesario */
+  }
+}
+
+/* Estilos para pantallas grandes (más de 1023px) */
+@media screen and (min-width: 1024px) {
+  .boton1 button {
+    font-size: 18px; /* Tamaño de fuente más grande para pantallas grandes */
+    padding: 12px 28px; /* Ajuste el relleno según sea necesario */
+  }
+}
+.letras1 p {
+  text-align: center;
+  color: beige;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* Animación de máquina de escribir */
+@keyframes maquinaEscribir {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Aplicar la animación a los párrafos */
+.letras1 p {
+  overflow: hidden; /* Para que el texto no se desborde del contenedor */
+  white-space: nowrap; /* Para evitar el salto de línea */
+  animation: maquinaEscribir 3s steps(40) 1s both; /* Duración, pasos y retraso de la animación */
+  font-family: cursive;
+}

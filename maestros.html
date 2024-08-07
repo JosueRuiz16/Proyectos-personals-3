@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/maestros.css" />
+    <link rel="stylesheet" href="java_scrpt/codigo.js" />
+    <link rel="icon" href="img/logo_emprendedora.ico" />
+    <title>administrador</title>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Salir del administrador</a></li>
+          <li><a href="manualmaestros.html">Que hacer?</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>Bienvenido como administrador</p>
+  </head>
+  <body>
+    <div id="dropAreaContainer">
+      <h1>Subir Archivo</h1>
+      <div
+        id="dropArea"
+        ondrop="handleDrop(event)"
+        ondragover="handleDragOver(event)"
+      >
+        Arrastra y suelta el archivo aquí o
+        <label for="fileInput">Haz clic aquí para seleccionar un archivo</label>
+        <input type="file" id="fileInput" onchange="handleFileChange(event)" />
+      </div>
+      <div id="status"></div>
+    </div>
+    <script src="java_scrpt/maestros.js"></script>
+  </body>
+</html>

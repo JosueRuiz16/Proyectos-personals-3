@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+}
+div {
+  margin-top: 50px;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+}
+.boton1 {
+  width: 30%;
+}
+.boton2 {
+  width: 24.8%;
+}
+button img {
+  font-size: 10px;
+}
+.boton1 img {
+  width: 80%;
+}
+.sociales1 {
+  width: 100%;
+}
+.sociales1 img {
+  width: 70%;
+}
+.zoom-button {
+  border-radius: 10%;
+  box-shadow: 16px 14px 20px rgba(179, 9, 9, 0.616);
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  max-width: 200%;
+}
+.boton1 {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.boton1:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 767px) {
+  .item {
+    margin-bottom: 20px;
+  }
+
+  .boton1 {
+    width: 100%;
+  }
+
+  .boton1 img {
+    width: 100%;
+    height: auto;
+  }
+}
